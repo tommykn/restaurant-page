@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+
+}
+
+#content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.active-page {
+    animation: fadeInAnimation ease .7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.header {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.header-title {
+    align-self: center;
+}
+.header-right {
+    display: flex;
+    margin-right: 1rem;
+    width: 12rem;
+    gap: .5rem;
+}
+
+.left {
+    margin-left: 1rem;
+    width: 12rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+}
+
+.main-top {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.welcome {
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+.farm-image {
+    object-fit: cover;
+    object-position: bottom;
+    height: 100%;
+    width: 100%;
+
+}
+
+.about-us {
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: lightblue;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+/* menu page */
+
+.burger,
+.shake {
+    width: 200px;
+    height: auto;
+}
+
+.menu-content {
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.menu-title {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.menu-main {
+    background-color: blue;
+    width: 700px;
+    height: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    border-radius: 1.2rem;
+}
+
+.food-grid {
+    display: grid;
+    height: 35rem;
+    width: 35rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: end;
+}
+
+.burger-wrapper,
+.shake-wrapper {
+    margin-bottom: 25%;
+    background-color: lightblue;
+    padding: 1rem;
+    border-radius: 1.3rem;
+}
+.food {
+    margin-top: 1rem;
+}
+
+.food,
+.shakes-title {
+    font-size: 3rem;
+}
+
+.shake-grid {
+    display: grid;
+    height: 35rem;
+    width: 35rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: end;
+
+}
+
+/* locations */
+
+.background {
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    flex: 1;
+}
+.contact-title {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.content-wrapper {
+    background-color: blue;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    border-radius: 1.2rem;
+}
+
+.locations-wrapper,
+.hours-wrapper,
+.phone-wrapper {
+    display: flex;
+    gap: 1rem;
+    color: black;
+    /* font-weight: bold; */
+    font-size: 1.3rem;
+}
+
+.info-wrapper {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+iframe {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
